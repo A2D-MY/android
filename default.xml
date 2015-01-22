@@ -17,7 +17,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="A2D-MY/android_build" remote="github" revision="cm-12.0" >
+  <project path="build" name="A2D-MY/android_build" remote="github" revision="L" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -555,22 +555,22 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
 
   <!-- A2D-MY Repository -->
-  <project name="A2D-MY/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="cm-12.0" />
+  <project name="A2D-MY/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="L" />
   <project name="A2D-MY/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="cm-12.0" />
   <project name="A2D-MY/android_frameworks_base" path="frameworks/base" remote="github" revision="cm-12.0" />
-  <project name="A2D-MY/android_system_vold" path="system/vold" remote="github" revision="cm-12.0" />
-  <project name="A2D-MY/android_vendor_a2dmy" path="vendor/cm" remote="github" revision="cm-12.0" />
-  <project name="A2D-MY/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" revision="cm-12.0" />
+  <project name="A2D-MY/android_system_vold" path="system/vold" remote="github" revision="L" />
+  <project name="A2D-MY/android_vendor_a2dmy" path="vendor/a2dmy" remote="github" revision="L" />
+  <project name="A2D-MY/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" revision="L" />
   
   <!-- Kernel Repository -->
-  <project name="anarkia1976/AK-OnePone" path="kernel/oneplus/msm8974" remote="github" revision="cm-12.0-skull-evo-official" />
+  <project name="A2D-MY/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="github" revision="L" />
   
-  <!-- CyanogenMod Bacon Repository -->
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" />
-  <project name="CyanogenMod/android_device_oppo_common" path="device/oppo/common" remote="github" revision="cm-12.0" />
-  <project name="CyanogenMod/android_frameworks_opt_connectivity" path="frameworks/opt/connectivity" remote="github" revision="cm-11.0" />
+  <!-- A2D-MY Bacon Repository -->
+  <project name="A2D-MY/android_device_qcom_common" path="device/qcom/common" remote="github" revision="L" />
+  <project name="A2D-MY/android_device_oppo_common" path="device/oppo/common" remote="github" revision="L" />
+  <project name="A2D-MY/android_frameworks_opt_connectivity" path="frameworks/opt/connectivity" remote="github" revision="L" />
   
-  <!-- The Muppets Blobs Repository -->
-  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-12.0" />
-  <project name="TheMuppets/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="cm-12.0" />
+  <!-- A2D-MY Blobs Repository -->
+  <project name="A2D-MY/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="L" />
+  <project name="A2D-MY/proprietary_vendor_oppo" path="vendor/oppo" remote="github" revision="L" />
 </manifest>
