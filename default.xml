@@ -556,8 +556,8 @@
 
   <!-- A2D-MY Repository -->
   <project name="A2D-MY/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="L" />
-  <project name="A2D-MY/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="cm-12.0" />
-  <project name="A2D-MY/android_frameworks_base" path="frameworks/base" remote="github" revision="cm-12.0" />
+  <project name="A2D-MY/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="L" />
+  <project name="A2D-MY/platform_frameworks_base" path="frameworks/base" remote="github" revision="L" />
   <project name="A2D-MY/android_system_vold" path="system/vold" remote="github" revision="L" />
   <project name="A2D-MY/android_vendor_a2dmy" path="vendor/a2dmy" remote="github" revision="L" />
   <project name="A2D-MY/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="github" revision="L" />
