@@ -32,6 +32,6 @@ Now enter the following to initialize the repository:
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/A2D-MY/manifests.git -b L
+    repo init -u git://github.com/A2D-MY/android.git -b L
 
     repo sync 
