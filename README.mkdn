@@ -1,1 +1,37 @@
 ![alt text](https://lh6.googleusercontent.com/-37djMc1kBAU/VMMeLfpASfI/AAAAAAAAAMc/b_ISf1EBZp4/w828-h480-no/logo.png "A2DMY")
+A2DMY Manifest
+===============
+For starters, You will need this kind of basic knowledge of [Git and Repo](http://source.android.com/source/version-control.html).
+
+Managing Directories
+---------------
+
+You will need to set up some directories in your build environment.
+
+To create them run:
+
+    mkdir -p ~/bin
+    mkdir -p ~/a2dmy
+    
+Install the Repository
+----------------------
+
+Enter the following to download the "repo" binary:
+
+    curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+
+    chmod a+x ~/bin/repo
+
+You may need to reboot for these changes to take effect. 
+Now enter the following to initialize the repository:
+
+    cd ~/a2dmy
+    
+  Repositories:
+---------------
+
+Before you continue --> run this in the terminal
+
+    repo init -u git://github.com/A2D-MY/manifests.git -b L
+
+    repo sync 
