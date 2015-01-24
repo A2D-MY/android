@@ -9,6 +9,9 @@
            fetch=".."
            review="review.cyanogenmod.org" />
 
+  <remote  name="cm"
+		   fetch="git://github.com/CyanogenMod" />
+
   <remote  name="a2dmy"
 		   fetch="https://github.com/A2D-MY" />
 
@@ -18,14 +21,13 @@
   <default revision="refs/heads/cm-12.0"
            remote="github"
            sync-c="true"
-           sync-j="4" />
+           sync-j="8" />
 
   <project path="build" name="build" remote="a2dmy" revision="L" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="manifests" name="A2D-MY/manifests" />
-
+  <project path="android" name="android" remote="a2dmy" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
@@ -332,7 +334,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="frameworks/av" name="CyanogenMod/android_frameworks_av" groups="pdk" />
-  <project path="frameworks/base" name="A2D-MY/frameworks_base" remote="a2dmy" revision="L"/>
+  <project path="frameworks/base" name="frameworks_base" remote="a2dmy" revision="staging-L"/>
   <project path="frameworks/compile/libbcc" name="CyanogenMod/android_frameworks_compile_libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="CyanogenMod/android_frameworks_compile_mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="CyanogenMod/android_frameworks_compile_slang" groups="pdk" />
@@ -447,7 +449,7 @@
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
   <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
-  <project path="packages/apps/Settings" name="A2D-MY/packages_apps_Settings" remote="a2dmy" revision="L" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="a2dmy" revision="staging-L" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
@@ -547,7 +549,7 @@
   <project path="system/netd" name="CyanogenMod/android_system_netd" groups="pdk" />
   <project path="system/qcom" name="CyanogenMod/android_system_qcom" groups="qcom" />
   <project path="system/security" name="CyanogenMod/android_system_security" groups="pdk" />
-  <project path="system/vold" name="A2D-MY/system_vold" remote="a2dmy" revision="L" />
+  <project path="system/vold" name="system_vold" remote="a2dmy" revision="L" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
@@ -560,17 +562,17 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-5.0.2_r1" />
-  <project path="vendor/a2dmy" name="A2D-MY/vendor_a2dmy" remote="a2dmy" revision="L" />
+  <project path="vendor/a2dmy" name="vendor_a2dmy" remote="a2dmy" revision="staging-L" />
 
   <!-- A2D-MY Repository -->
-  <project name="A2D-MY/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="a2dmy" revision="L" />
-  <project name="A2D-MY/android_device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="a2dmy" revision="L" />
-  <project name="A2D-MY/android_device_qcom_common" path="device/qcom/common" remote="a2dmy" revision="L" />
-  <project name="A2D-MY/android_device_oppo_common" path="device/oppo/common" remote="a2dmy" revision="L" />
-  <project name="A2D-MY/android_frameworks_opt_connectivity" path="frameworks/opt/connectivity" remote="a2dmy" revision="L" />
+  <project name="device_oneplus_bacon" path="device/oneplus/bacon" remote="a2dmy" revision="L" />
+  <project name="device_oppo_msm8974-common" path="device/oppo/msm8974-common" remote="a2dmy" revision="L" />
+  <project name="device_qcom_common" path="device/qcom/common" remote="a2dmy" revision="L" />
+  <project name="device_oppo_common" path="device/oppo/common" remote="a2dmy" revision="L" />
+  <project name="frameworks_opt_connectivity" path="frameworks/opt/connectivity" remote="a2dmy" revision="L" />
 
   <!-- Kernel Repository -->
-  <project name="A2D-MY/android_kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="a2dmy" revision="L" />
+  <project name="kernel_oneplus_msm8974" path="kernel/oneplus/msm8974" remote="a2dmy" revision="L" />
 
   <!-- A2D-MY Blobs Repository -->
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="cm-12.0" />
